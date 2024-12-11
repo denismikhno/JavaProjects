@@ -5,6 +5,7 @@ import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -23,6 +24,10 @@ public class App extends JFrame {
 	public App() {
 		
 		super("Счетчик ворон");
+
+		String path = "./images/1.png";
+		ImageIcon icon = new ImageIcon(App.class.getResource(path));
+		setIconImage(icon.getImage());
 		
 		setSize(500, 100);
 		setResizable(false);
